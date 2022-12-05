@@ -1,0 +1,62 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.container {
+    font-family: "Roboto";
+    height: 100%;
+    padding-left: 32px;
+    padding-right: 32px;
+    display: grid;
+    grid-template-rows: 1fr 7fr;
+}
+
+.container > header {
+    display: flex;
+    align-items: center;
+    border-bottom: solid;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.container > main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+form {
+    text-align: center;
+}
+
+button {
+    border-radius: 32px;
+    height: 48px;
+    width: 96px;
+    font-size: 24px;
+}
+
+.board {
+    width: max(400px, 50vh);
+    height: max(400px, 50vh);
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+}
+
+.square {
+    border: solid;
+    font-size: 100px;
+    padding-top: 50% - 50px;
+    text-align: center;
+}
+
+main > p {
+    font-size: 10vw;
+}
